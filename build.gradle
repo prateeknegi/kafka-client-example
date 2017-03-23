@@ -1,0 +1,20 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+repositories {
+//    maven {
+//        url 'http://artifactory.kroger.com/artifactory/plugins-release'
+//    }
+//    maven {
+//        url 'http://artifactory.kroger.com/artifactory/libs-release'
+//    }
+//    mavenLocal()
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile group: 'org.apache.kafka', name: 'kafka-clients', version: '0.10.2.0'
+}
